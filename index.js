@@ -52,5 +52,7 @@ function placeOrder(cardNumber) {
   if(!cardNumber) {
     return "Sorry, we don't have a credit card on file for you."
   }
-  
+  totalVal = total();
+  cart = [];
+  return `Your total cost is $${totalVal}, which will be charged to the card ${cardNumber}.`
 }

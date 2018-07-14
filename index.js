@@ -23,7 +23,7 @@ function viewCart() {
     }
     else cartString+= ` ${cart[i].itemName} at ${cart[i].itemPrice},`
   }
-  return cartString
+  return cartString;
 }
 
 function total() {

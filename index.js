@@ -11,7 +11,8 @@ function setCart(c) {
 
 function addToCart(item) {
   let newItem = {itemName: item, itemPrice: Math.floor(Math.random()*10 + 1)};
-  Object.assign(cart, newItem)
+  Object.assign(cart, newItem);
+  return cart;
 }
 
 function viewCart() {

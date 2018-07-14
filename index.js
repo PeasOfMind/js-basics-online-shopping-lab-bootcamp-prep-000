@@ -31,11 +31,11 @@ function viewCart() {
 }
 
 function total() {
-  count = 0;
+  let count = 0;
   for(let i = 0; i < cart.length; i++){
     count += cart[i].itemPrice;
   }
-  return count
+  return count;
 }
 
 function removeFromCart(item) {

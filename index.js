@@ -20,7 +20,7 @@ function viewCart() {
   if(cart.length === 0) return "Your shopping cart is empty.";
   for(let i in cart){
     if(cart.length = 1) {
-      return cartString + ` ${cart[i].itemName} at ${cart[i].itemPrice}.`
+      return cartString + ` ${cart[i].itemName} at $${cart[i].itemPrice}.`
     }
     if(i = cart.length-1) {
       cartString += `and ${cart[i].itemName} at $${cart[i].itemPrice}.`
